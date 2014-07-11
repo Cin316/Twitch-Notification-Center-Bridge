@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E162EC85197080610098EA57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162EC84197080610098EA57 /* Cocoa.framework */; };
+		E162EC8F197080610098EA57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E162EC8D197080610098EA57 /* InfoPlist.strings */; };
+		E162EC91197080610098EA57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E162EC90197080610098EA57 /* main.m */; };
+		E162EC95197080610098EA57 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E162EC93197080610098EA57 /* Credits.rtf */; };
+		E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E162EC97197080610098EA57 /* TNCAppDelegate.m */; };
+		E162EC9B197080610098EA57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162EC99197080610098EA57 /* MainMenu.xib */; };
+		E162EC9D197080610098EA57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E162EC9C197080610098EA57 /* Images.xcassets */; };
+		E162ECA4197080610098EA57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162ECA3197080610098EA57 /* XCTest.framework */; };
+		E162ECA5197080610098EA57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162EC84197080610098EA57 /* Cocoa.framework */; };
+		E162ECAD197080610098EA57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E162ECAB197080610098EA57 /* InfoPlist.strings */; };
+		E162ECAF197080610098EA57 /* Twitch_Notification_Center_BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E162ECAE197080610098EA57 /* Twitch_Notification_Center_BridgeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E162ECA6197080610098EA57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E162EC79197080610098EA57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E162EC80197080610098EA57;
+			remoteInfo = "Twitch Notification Center Bridge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E162EC81197080610098EA57 /* Twitch Notification Center Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitch Notification Center Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E162EC84197080610098EA57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E162EC87197080610098EA57 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E162EC88197080610098EA57 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E162EC89197080610098EA57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E162EC8C197080610098EA57 /* Twitch Notification Center Bridge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Twitch Notification Center Bridge-Info.plist"; sourceTree = "<group>"; };
+		E162EC8E197080610098EA57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E162EC90197080610098EA57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E162EC92197080610098EA57 /* Twitch Notification Center Bridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitch Notification Center Bridge-Prefix.pch"; sourceTree = "<group>"; };
+		E162EC94197080610098EA57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E162EC96197080610098EA57 /* TNCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNCAppDelegate.h; sourceTree = "<group>"; };
+		E162EC97197080610098EA57 /* TNCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNCAppDelegate.m; sourceTree = "<group>"; };
+		E162EC9A197080610098EA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E162EC9C197080610098EA57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E162ECA2197080610098EA57 /* Twitch Notification Center BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twitch Notification Center BridgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E162ECA3197080610098EA57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E162ECAA197080610098EA57 /* Twitch Notification Center BridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Twitch Notification Center BridgeTests-Info.plist"; sourceTree = "<group>"; };
+		E162ECAC197080610098EA57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E162ECAE197080610098EA57 /* Twitch_Notification_Center_BridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Twitch_Notification_Center_BridgeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E162EC7E197080610098EA57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162EC85197080610098EA57 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E162EC9F197080610098EA57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162ECA5197080610098EA57 /* Cocoa.framework in Frameworks */,
+				E162ECA4197080610098EA57 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E162EC78197080610098EA57 = {
+			isa = PBXGroup;
+			children = (
+				E162EC8A197080610098EA57 /* Twitch Notification Center Bridge */,
+				E162ECA8197080610098EA57 /* Twitch Notification Center BridgeTests */,
+				E162EC83197080610098EA57 /* Frameworks */,
+				E162EC82197080610098EA57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E162EC82197080610098EA57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E162EC81197080610098EA57 /* Twitch Notification Center Bridge.app */,
+				E162ECA2197080610098EA57 /* Twitch Notification Center BridgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E162EC83197080610098EA57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E162EC84197080610098EA57 /* Cocoa.framework */,
+				E162ECA3197080610098EA57 /* XCTest.framework */,
+				E162EC86197080610098EA57 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E162EC86197080610098EA57 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E162EC87197080610098EA57 /* AppKit.framework */,
+				E162EC88197080610098EA57 /* CoreData.framework */,
+				E162EC89197080610098EA57 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E162EC8A197080610098EA57 /* Twitch Notification Center Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E162EC96197080610098EA57 /* TNCAppDelegate.h */,
+				E162EC97197080610098EA57 /* TNCAppDelegate.m */,
+				E162EC99197080610098EA57 /* MainMenu.xib */,
+				E162EC9C197080610098EA57 /* Images.xcassets */,
+				E162EC8B197080610098EA57 /* Supporting Files */,
+			);
+			path = "Twitch Notification Center Bridge";
+			sourceTree = "<group>";
+		};
+		E162EC8B197080610098EA57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E162EC8C197080610098EA57 /* Twitch Notification Center Bridge-Info.plist */,
+				E162EC8D197080610098EA57 /* InfoPlist.strings */,
+				E162EC90197080610098EA57 /* main.m */,
+				E162EC92197080610098EA57 /* Twitch Notification Center Bridge-Prefix.pch */,
+				E162EC93197080610098EA57 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E162ECA8197080610098EA57 /* Twitch Notification Center BridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E162ECAE197080610098EA57 /* Twitch_Notification_Center_BridgeTests.m */,
+				E162ECA9197080610098EA57 /* Supporting Files */,
+			);
+			path = "Twitch Notification Center BridgeTests";
+			sourceTree = "<group>";
+		};
+		E162ECA9197080610098EA57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E162ECAA197080610098EA57 /* Twitch Notification Center BridgeTests-Info.plist */,
+				E162ECAB197080610098EA57 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E162EC80197080610098EA57 /* Twitch Notification Center Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E162ECB2197080610098EA57 /* Build configuration list for PBXNativeTarget "Twitch Notification Center Bridge" */;
+			buildPhases = (
+				E162EC7D197080610098EA57 /* Sources */,
+				E162EC7E197080610098EA57 /* Frameworks */,
+				E162EC7F197080610098EA57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twitch Notification Center Bridge";
+			productName = "Twitch Notification Center Bridge";
+			productReference = E162EC81197080610098EA57 /* Twitch Notification Center Bridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E162ECA1197080610098EA57 /* Twitch Notification Center BridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E162ECB5197080610098EA57 /* Build configuration list for PBXNativeTarget "Twitch Notification Center BridgeTests" */;
+			buildPhases = (
+				E162EC9E197080610098EA57 /* Sources */,
+				E162EC9F197080610098EA57 /* Frameworks */,
+				E162ECA0197080610098EA57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E162ECA7197080610098EA57 /* PBXTargetDependency */,
+			);
+			name = "Twitch Notification Center BridgeTests";
+			productName = "Twitch Notification Center BridgeTests";
+			productReference = E162ECA2197080610098EA57 /* Twitch Notification Center BridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E162EC79197080610098EA57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nicholas Reichert";
+				TargetAttributes = {
+					E162ECA1197080610098EA57 = {
+						TestTargetID = E162EC80197080610098EA57;
+					};
+				};
+			};
+			buildConfigurationList = E162EC7C197080610098EA57 /* Build configuration list for PBXProject "Twitch Notification Center Bridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E162EC78197080610098EA57;
+			productRefGroup = E162EC82197080610098EA57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E162EC80197080610098EA57 /* Twitch Notification Center Bridge */,
+				E162ECA1197080610098EA57 /* Twitch Notification Center BridgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E162EC7F197080610098EA57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162EC8F197080610098EA57 /* InfoPlist.strings in Resources */,
+				E162EC9D197080610098EA57 /* Images.xcassets in Resources */,
+				E162EC95197080610098EA57 /* Credits.rtf in Resources */,
+				E162EC9B197080610098EA57 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E162ECA0197080610098EA57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162ECAD197080610098EA57 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E162EC7D197080610098EA57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */,
+				E162EC91197080610098EA57 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E162EC9E197080610098EA57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E162ECAF197080610098EA57 /* Twitch_Notification_Center_BridgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E162ECA7197080610098EA57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E162EC80197080610098EA57 /* Twitch Notification Center Bridge */;
+			targetProxy = E162ECA6197080610098EA57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E162EC8D197080610098EA57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162EC8E197080610098EA57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E162EC93197080610098EA57 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162EC94197080610098EA57 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E162EC99197080610098EA57 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162EC9A197080610098EA57 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E162ECAB197080610098EA57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E162ECAC197080610098EA57 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E162ECB0197080610098EA57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E162ECB1197080610098EA57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E162ECB3197080610098EA57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Prefix.pch";
+				INFOPLIST_FILE = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E162ECB4197080610098EA57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Prefix.pch";
+				INFOPLIST_FILE = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E162ECB6197080610098EA57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twitch Notification Center Bridge.app/Contents/MacOS/Twitch Notification Center Bridge";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Twitch Notification Center BridgeTests/Twitch Notification Center BridgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E162ECB7197080610098EA57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Twitch Notification Center Bridge.app/Contents/MacOS/Twitch Notification Center Bridge";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Twitch Notification Center Bridge/Twitch Notification Center Bridge-Prefix.pch";
+				INFOPLIST_FILE = "Twitch Notification Center BridgeTests/Twitch Notification Center BridgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E162EC7C197080610098EA57 /* Build configuration list for PBXProject "Twitch Notification Center Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E162ECB0197080610098EA57 /* Debug */,
+				E162ECB1197080610098EA57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E162ECB2197080610098EA57 /* Build configuration list for PBXNativeTarget "Twitch Notification Center Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E162ECB3197080610098EA57 /* Debug */,
+				E162ECB4197080610098EA57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E162ECB5197080610098EA57 /* Build configuration list for PBXNativeTarget "Twitch Notification Center BridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E162ECB6197080610098EA57 /* Debug */,
+				E162ECB7197080610098EA57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E162EC79197080610098EA57 /* Project object */;
+}

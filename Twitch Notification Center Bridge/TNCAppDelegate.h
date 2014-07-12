@@ -8,5 +8,8 @@
 @interface TNCAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+
+@property (strong) NSStatusItem *statusItem;
 
 @end

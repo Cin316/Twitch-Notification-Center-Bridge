@@ -13,6 +13,8 @@
     NSStatusBar *system = [NSStatusBar systemStatusBar];
     self.statusItem = [system statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.title = @"Twitch";
+    self.statusItem.image = [NSImage imageNamed:@"StatusItemIcon"];
+    self.statusItem.alternateImage = [NSImage imageNamed:@"StatusItemIconInverted"];
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.statusMenu;
 }

@@ -243,14 +243,14 @@
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
-                    <box autoresizesSubviews="NO" focusRingType="none" appearanceType="lightContent" ambiguous="YES" misplaced="YES" title="Twitch Authentication" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="0QT-ZG-BBX">
+                    <box autoresizesSubviews="NO" focusRingType="none" appearanceType="lightContent" title="Twitch Authentication" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="0QT-ZG-BBX">
                         <rect key="frame" x="17" y="18" width="446" height="115"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView">
                             <rect key="frame" x="1" y="1" width="444" height="99"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textField appearanceType="lightContent" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g02-xD-GhD">
+                                <textField appearanceType="lightContent" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g02-xD-GhD">
                                     <rect key="frame" x="146" y="76" width="152" height="17"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Currently logged in as: " id="adg-9J-h08">
@@ -279,11 +279,19 @@
                         </view>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="g02-xD-GhD" secondAttribute="centerX" id="Zjf-0V-p41"/>
+                            <constraint firstItem="g02-xD-GhD" firstAttribute="top" secondItem="0QT-ZG-BBX" secondAttribute="top" constant="21" id="xjA-Ab-pKB"/>
                         </constraints>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0QT-ZG-BBX" secondAttribute="trailing" constant="20" id="4NH-2Q-Lz7"/>
+                    <constraint firstItem="0QT-ZG-BBX" firstAttribute="top" secondItem="wXQ-ZV-XJQ" secondAttribute="top" constant="164" id="4b4-u1-h1v"/>
+                    <constraint firstAttribute="bottom" secondItem="0QT-ZG-BBX" secondAttribute="bottom" constant="22" id="E3U-LT-5K4"/>
+                    <constraint firstAttribute="centerX" secondItem="0QT-ZG-BBX" secondAttribute="centerX" id="PjL-lj-aJU"/>
+                    <constraint firstItem="0QT-ZG-BBX" firstAttribute="leading" secondItem="wXQ-ZV-XJQ" secondAttribute="leading" constant="20" id="Zwg-Ph-ASd"/>
+                </constraints>
             </view>
             <contentBorderThickness minY="0.0" maxY="60"/>
         </window>

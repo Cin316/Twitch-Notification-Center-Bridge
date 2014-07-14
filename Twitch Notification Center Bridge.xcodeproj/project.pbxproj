@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12488F2197483580041B236 /* TNCPreferenceWindowDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12488F1197483580041B236 /* TNCPreferenceWindowDelegate.m */; };
 		E162EC85197080610098EA57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E162EC84197080610098EA57 /* Cocoa.framework */; };
 		E162EC8F197080610098EA57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E162EC8D197080610098EA57 /* InfoPlist.strings */; };
 		E162EC91197080610098EA57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E162EC90197080610098EA57 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E12488F0197483580041B236 /* TNCPreferenceWindowDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCPreferenceWindowDelegate.h; sourceTree = "<group>"; };
+		E12488F1197483580041B236 /* TNCPreferenceWindowDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCPreferenceWindowDelegate.m; sourceTree = "<group>"; };
 		E162EC81197080610098EA57 /* Twitch Notification Center Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitch Notification Center Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E162EC84197080610098EA57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E162EC87197080610098EA57 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 			children = (
 				E162EC96197080610098EA57 /* TNCAppDelegate.h */,
 				E162EC97197080610098EA57 /* TNCAppDelegate.m */,
+				E12488F0197483580041B236 /* TNCPreferenceWindowDelegate.h */,
+				E12488F1197483580041B236 /* TNCPreferenceWindowDelegate.m */,
 				E162EC99197080610098EA57 /* MainMenu.xib */,
 				E162EC9C197080610098EA57 /* Images.xcassets */,
 				E162EC8B197080610098EA57 /* Supporting Files */,
@@ -175,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */,
+				E12488F2197483580041B236 /* TNCPreferenceWindowDelegate.m in Sources */,
 				E162EC91197080610098EA57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +332,7 @@
 				E162ECB4197080610098EA57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

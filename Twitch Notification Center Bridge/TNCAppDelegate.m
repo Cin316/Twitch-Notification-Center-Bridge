@@ -10,6 +10,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
+    
     NSStatusBar *system = [NSStatusBar systemStatusBar];
     self.statusItem = [system statusItemWithLength:NSVariableStatusItemLength];
     self.statusItem.image = [NSImage imageNamed:@"StatusItemIcon"];

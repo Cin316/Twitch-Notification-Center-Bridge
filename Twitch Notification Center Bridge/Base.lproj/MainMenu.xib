@@ -120,9 +120,9 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField appearanceType="lightContent" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g02-xD-GhD">
-                                    <rect key="frame" x="146" y="76" width="152" height="17"/>
+                                    <rect key="frame" x="16" y="76" width="412" height="17"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Currently logged in as: " id="adg-9J-h08">
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Not logged in " id="adg-9J-h08">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -131,7 +131,7 @@
                                 <button appearanceType="lightContent" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7Z-hS-hJi">
                                     <rect key="frame" x="158" y="40" width="128" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <buttonCell key="cell" type="push" title="Reauthenticate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N1D-R2-Hak">
+                                    <buttonCell key="cell" type="push" title="Reauthenticate" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N1D-R2-Hak">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -139,7 +139,7 @@
                                 <button appearanceType="lightContent" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEM-Gw-3Hc">
                                     <rect key="frame" x="181" y="7" width="82" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                    <buttonCell key="cell" type="push" title="Log out" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="O0b-Nu-WjJ">
+                                    <buttonCell key="cell" type="push" title="Log in" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="O0b-Nu-WjJ">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
@@ -147,7 +147,9 @@
                             </subviews>
                         </view>
                         <constraints>
+                            <constraint firstItem="g02-xD-GhD" firstAttribute="leading" secondItem="0QT-ZG-BBX" secondAttribute="leading" constant="16" id="PON-Gb-gzQ"/>
                             <constraint firstAttribute="centerX" secondItem="g02-xD-GhD" secondAttribute="centerX" id="Zjf-0V-p41"/>
+                            <constraint firstAttribute="trailing" secondItem="g02-xD-GhD" secondAttribute="trailing" constant="16" id="qR2-wl-wjS"/>
                             <constraint firstItem="g02-xD-GhD" firstAttribute="top" secondItem="0QT-ZG-BBX" secondAttribute="top" constant="21" id="xjA-Ab-pKB"/>
                         </constraints>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -176,7 +178,9 @@
                     <webView appearanceType="lightContent" translatesAutoresizingMaskIntoConstraints="NO" id="syT-6b-Q8J">
                         <rect key="frame" x="20" y="20" width="360" height="474"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12">
+                            <nil key="identifier"/>
+                        </webPreferences>
                     </webView>
                 </subviews>
                 <constraints>
@@ -185,16 +189,6 @@
                     <constraint firstAttribute="trailing" secondItem="syT-6b-Q8J" secondAttribute="trailing" constant="20" id="q4g-Vz-L4b"/>
                     <constraint firstItem="syT-6b-Q8J" firstAttribute="top" secondItem="An3-DJ-uiB" secondAttribute="top" constant="6" id="tIF-PD-by5"/>
                 </constraints>
-            </view>
-        </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="0eM-S6-Shu">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="75" y="151" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1002"/>
-            <view key="contentView" id="9E0-hy-QeE">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                <autoresizingMask key="autoresizingMask"/>
             </view>
         </window>
     </objects>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -162,6 +163,39 @@
                 </constraints>
             </view>
             <contentBorderThickness minY="0.0" maxY="60"/>
+        </window>
+        <window title="Twitch Authentication" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" appearanceType="lightContent" animationBehavior="default" id="Z3U-gX-f7e">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="75" y="151" width="400" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1002"/>
+            <view key="contentView" id="An3-DJ-uiB">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView appearanceType="lightContent" translatesAutoresizingMaskIntoConstraints="NO" id="syT-6b-Q8J">
+                        <rect key="frame" x="20" y="20" width="360" height="474"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="syT-6b-Q8J" firstAttribute="leading" secondItem="An3-DJ-uiB" secondAttribute="leading" constant="20" id="KNV-8t-Ke9"/>
+                    <constraint firstAttribute="bottom" secondItem="syT-6b-Q8J" secondAttribute="bottom" constant="20" id="Mxv-gY-vhN"/>
+                    <constraint firstAttribute="trailing" secondItem="syT-6b-Q8J" secondAttribute="trailing" constant="20" id="q4g-Vz-L4b"/>
+                    <constraint firstItem="syT-6b-Q8J" firstAttribute="top" secondItem="An3-DJ-uiB" secondAttribute="top" constant="6" id="tIF-PD-by5"/>
+                </constraints>
+            </view>
+        </window>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="0eM-S6-Shu">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="75" y="151" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="1002"/>
+            <view key="contentView" id="9E0-hy-QeE">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
         </window>
     </objects>
 </document>

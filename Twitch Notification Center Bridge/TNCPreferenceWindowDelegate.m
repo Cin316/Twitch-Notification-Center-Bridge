@@ -11,6 +11,7 @@
 @implementation TNCPreferenceWindowDelegate
 
 - (BOOL)windowShouldClose:(id)sender{
+    //Yes, window should close.
     return YES;
 }
 

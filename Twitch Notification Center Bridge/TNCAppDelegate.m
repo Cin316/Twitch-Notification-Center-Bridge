@@ -17,7 +17,8 @@
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.statusMenu;
     
-    [self.window setDelegate:[[TNCPreferenceWindowDelegate alloc] init]];
+    self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
+    [self.window setDelegate:self.prefDelegate];
 }
 
 @end

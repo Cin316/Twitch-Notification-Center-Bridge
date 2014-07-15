@@ -10,12 +10,12 @@
 
 @implementation TNCPreferenceWindowDelegate
 
-- (id) init{
-    self = [super init];
-    if(self){
-        //Do stuff.
-    }
-    return self;
+- (BOOL)windowShouldClose:(id)sender{
+    return YES;
+}
+
+- (void)windowWillClose:(NSNotification *)notification{
+    
 }
 
 @end

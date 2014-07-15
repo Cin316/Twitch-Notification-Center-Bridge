@@ -10,6 +10,7 @@
 
 @interface TNCPreferenceWindowDelegate : NSObject <NSWindowDelegate>
 
-- (id) init;
+- (BOOL)windowShouldClose:(id)sender;
+- (void)windowWillClose:(NSNotification *)notification;
 
 @end

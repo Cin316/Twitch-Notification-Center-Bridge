@@ -15,6 +15,7 @@
 		E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E162EC97197080610098EA57 /* TNCAppDelegate.m */; };
 		E162EC9B197080610098EA57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162EC99197080610098EA57 /* MainMenu.xib */; };
 		E162EC9D197080610098EA57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E162EC9C197080610098EA57 /* Images.xcassets */; };
+		E1EFAA471975D79900E78A53 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EFAA461975D79900E78A53 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +35,7 @@
 		E162EC97197080610098EA57 /* TNCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNCAppDelegate.m; sourceTree = "<group>"; };
 		E162EC9A197080610098EA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E162EC9C197080610098EA57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E162ECA3197080610098EA57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1EFAA461975D79900E78A53 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EFAA471975D79900E78A53 /* WebKit.framework in Frameworks */,
 				E162EC85197080610098EA57 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,8 +71,8 @@
 		E162EC83197080610098EA57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1EFAA461975D79900E78A53 /* WebKit.framework */,
 				E162EC84197080610098EA57 /* Cocoa.framework */,
-				E162ECA3197080610098EA57 /* XCTest.framework */,
 				E162EC86197080610098EA57 /* Other Frameworks */,
 			);
 			name = Frameworks;

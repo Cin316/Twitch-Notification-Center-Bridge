@@ -23,7 +23,7 @@
     
     //Register TNCPrefernceWindowDelegate as delegate of preference window.
     self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
-    [self.window setDelegate:self.prefDelegate];
+    [self.preferenceWindow setDelegate:self.prefDelegate];
 }
 
 @end

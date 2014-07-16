@@ -15,8 +15,8 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="TNCAppDelegate">
             <connections>
+                <outlet property="preferenceWindow" destination="SIt-uB-kqY" id="ODZ-RO-Goi"/>
                 <outlet property="statusMenu" destination="tPx-LO-vnZ" id="UgZ-JT-uXP"/>
-                <outlet property="window" destination="SIt-uB-kqY" id="1t5-kh-GdA"/>
             </connections>
         </customObject>
         <menu title="Status Menu" id="tPx-LO-vnZ">

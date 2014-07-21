@@ -10,6 +10,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    //Make the app display all notifications.
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+    
     //Mark the application has no dock icon and no menu bar.
     [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
     
@@ -29,7 +32,23 @@
     self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
     [self.preferenceWindow setDelegate:self.prefDelegate];
     
-    
+    //Send notification to log in.
+    [TNCAppDelegate sendNotification:@"No login credentials!" details:@"Log in first by opening up preferences."];
+}
+
++ (void)sendNotification:(NSString*)title details:(NSString*)details{
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = title;
+    notification.informativeText = details;
+    notification.soundName = NSUserNotificationDefaultSoundName;
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+}
+
+//Displays all notifications.
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center
+     shouldPresentNotification:(NSUserNotification *)notification
+{
+    return YES;
 }
 
 @end

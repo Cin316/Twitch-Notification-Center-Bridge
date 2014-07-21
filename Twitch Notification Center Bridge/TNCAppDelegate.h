@@ -7,7 +7,7 @@
 #import "TNCPreferenceWindowDelegate.h"
 #import "TNCAuthWebViewDelegate.h"
 
-@interface TNCAppDelegate : NSObject <NSApplicationDelegate>
+@interface TNCAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate>
 
 @property TNCPreferenceWindowDelegate* prefDelegate;
 @property TNCAuthWebViewDelegate* authWebViewDelegate;
@@ -17,5 +17,7 @@
 @property (assign) IBOutlet NSWindow *authWebViewWindow;
 
 @property (strong) NSStatusItem *statusItem;
+
++ (void)sendNotification:(NSString*)title details:(NSString*)details;
 
 @end

@@ -2,13 +2,17 @@
 //  TNCPreferenceWindowDelegate.h
 //  Twitch Notification Center Bridge
 //
-//  Created by Nicholas Reichert on 7/14/14.
-//  Copyright (c) 2014 Nicholas Reichert. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
+#import "TNCAuthWebViewDelegate.h"
 
 @interface TNCPreferenceWindowDelegate : NSObject <NSWindowDelegate>
+
+@property (weak) IBOutlet NSWindow *authWebViewWindow;
+@property (weak) IBOutlet TNCAuthWebViewDelegate *authWebViewDelegate;
+@property (weak) IBOutlet WebView *authWebView;
+
+- (IBAction)logButtonPress:(id)sender;
 
 - (BOOL)windowShouldClose:(id)sender;
 - (void)windowWillClose:(NSNotification *)notification;

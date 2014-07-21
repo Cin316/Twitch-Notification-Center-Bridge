@@ -21,9 +21,15 @@
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.statusMenu;
     
+    //Register TNCAuthWebViewWindowDelegate as delegate of web view window.
+    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] init];
+    [self.authWebViewWindow setDelegate:self.authWebViewDelegate];
+    
     //Register TNCPrefernceWindowDelegate as delegate of preference window.
     self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
     [self.preferenceWindow setDelegate:self.prefDelegate];
+    
+    
 }
 
 @end

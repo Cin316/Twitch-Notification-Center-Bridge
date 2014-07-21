@@ -2,13 +2,19 @@
 //  TNCPreferenceWindowDelegate.m
 //  Twitch Notification Center Bridge
 //
-//  Created by Nicholas Reichert on 7/14/14.
-//  Copyright (c) 2014 Nicholas Reichert. All rights reserved.
-//
 
 #import "TNCPreferenceWindowDelegate.h"
 
 @implementation TNCPreferenceWindowDelegate
+
+- (IBAction)logButtonPress:(id)sender{
+    //Open webView.
+    [self.authWebViewWindow makeKeyAndOrderFront:nil];
+    //Load twitch login URL.
+    NSURL *url = [NSURL URLWithString:@"https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=myquwg33khcxf7bh65j7kez3rr72v43&redirect_uri=http://localhost"];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [self.authWebView.mainFrame loadRequest:urlRequest];
+}
 
 - (BOOL)windowShouldClose:(id)sender{
     //Yes, window should close.

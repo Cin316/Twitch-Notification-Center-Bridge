@@ -12,10 +12,7 @@
 
 - (id)initWithWebView:(WebView *)webView;
 
-- (void)webView:(WebView *)sender
-        resource:(id)identifier
-        didReceiveResponse:(NSURLResponse *)response
-        fromDataSource:(WebDataSource *)dataSource;
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame*)frame;
 
 - (BOOL)windowShouldClose:(id)sender;
 

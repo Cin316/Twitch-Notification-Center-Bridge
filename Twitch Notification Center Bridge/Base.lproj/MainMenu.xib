@@ -15,6 +15,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="TNCAppDelegate">
             <connections>
+                <outlet property="authWebView" destination="syT-6b-Q8J" id="Hcm-kQ-0Wy"/>
                 <outlet property="authWebViewWindow" destination="Z3U-gX-f7e" id="mH1-O2-u0U"/>
                 <outlet property="preferenceWindow" destination="SIt-uB-kqY" id="ODZ-RO-Goi"/>
                 <outlet property="statusMenu" destination="tPx-LO-vnZ" id="UgZ-JT-uXP"/>
@@ -27,11 +28,7 @@
                 <outlet property="authWebViewWindow" destination="Z3U-gX-f7e" id="ISg-Lo-Epg"/>
             </connections>
         </customObject>
-        <customObject id="MXt-h3-x07" customClass="TNCAuthWebViewDelegate">
-            <connections>
-                <outlet property="authWebView" destination="syT-6b-Q8J" id="bqF-ij-cbp"/>
-            </connections>
-        </customObject>
+        <customObject id="MXt-h3-x07" customClass="TNCAuthWebViewDelegate"/>
         <menu title="Status Menu" id="tPx-LO-vnZ">
             <items>
                 <menuItem title="Enable Twitch Notifications" id="cCj-eG-kwV">

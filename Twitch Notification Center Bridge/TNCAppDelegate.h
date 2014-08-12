@@ -15,6 +15,7 @@
 @property (assign) IBOutlet NSWindow *preferenceWindow;
 @property (weak) IBOutlet NSMenu *statusMenu;
 @property (assign) IBOutlet NSWindow *authWebViewWindow;
+@property (weak) IBOutlet WebView *authWebView;
 
 @property (strong) NSStatusItem *statusItem;
 

@@ -25,7 +25,7 @@
     self.statusItem.menu = self.statusMenu;
     
     //Register TNCAuthWebViewWindowDelegate as delegate of web view window.
-    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] init];
+    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] initWithWebView:[self authWebView]];
     [self.authWebViewWindow setDelegate:self.authWebViewDelegate];
     
     //Register TNCPrefernceWindowDelegate as delegate of preference window.

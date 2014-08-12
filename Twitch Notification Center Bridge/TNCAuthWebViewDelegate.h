@@ -8,7 +8,14 @@
 
 @interface TNCAuthWebViewDelegate : NSObject <NSWindowDelegate>
 
-@property (strong) IBOutlet WebView *authWebView;
+@property (weak) WebView *authWebView;
+
+- (id)initWithWebView:(WebView *)webView;
+
+- (void)webView:(WebView *)sender
+        resource:(id)identifier
+        didReceiveResponse:(NSURLResponse *)response
+        fromDataSource:(WebDataSource *)dataSource;
 
 - (BOOL)windowShouldClose:(id)sender;
 

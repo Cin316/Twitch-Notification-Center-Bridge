@@ -19,6 +19,6 @@
 
 @property (strong) NSStatusItem *statusItem;
 
-+ (void)sendNotification:(NSString*)title details:(NSString*)details;
++ (NSUserNotification*)newNotification:(NSString*)title details:(NSString*)details;
 
 @end

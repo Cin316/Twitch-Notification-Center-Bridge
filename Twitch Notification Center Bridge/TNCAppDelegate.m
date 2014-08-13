@@ -45,6 +45,15 @@
     return notification;
 }
 
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification{
+    if([notification.title isEqualToString:@"No login credentials!"]){//Is there a localization independant way to do this?
+        //Open preference window.
+        [self.preferenceWindow makeKeyAndOrderFront:self];
+        //Remove notification from notification center.
+        [center removeDeliveredNotification: notification];
+    }
+}
+
 //Displays all notifications.
 - (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center
      shouldPresentNotification:(NSUserNotification *)notification

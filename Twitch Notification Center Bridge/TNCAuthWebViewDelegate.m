@@ -11,17 +11,24 @@
     self = [super init];
     if (self) {
         self.authWebView = webView;
-        [self.authWebView setFrameLoadDelegate:self];
+        [self.authWebView setResourceLoadDelegate:self];
     }
     return self;
 }
-
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame*)frame
-{
-    if(frame == [sender mainFrame]) {//A new page has been loaded.
-        NSString* currentURL = frame.dataSource.request.URL.absoluteString;
-        //Add implementation.
+- (NSURLRequest *)webView:(WebView *)sender
+                 resource:(id)identifier
+          willSendRequest:(NSURLRequest *)request
+         redirectResponse:(NSURLResponse *)redirectResponse
+           fromDataSource:(WebDataSource *)dataSource{
+    
+    NSString* currentURL = request.URL.absoluteString;
+    if([currentURL hasPrefix:@"http://localhost/#access_token="]){
+        NSString *accessToken = [[currentURL componentsSeparatedByString:@"access_token="] lastObject];
+        NSLog(@"%@", accessToken);
+        //TODO Store access token and display success message.
     }
+    //Continue loading webpage unmodified.
+    return request;
 }
 
 - (BOOL)windowShouldClose:(id)sender{

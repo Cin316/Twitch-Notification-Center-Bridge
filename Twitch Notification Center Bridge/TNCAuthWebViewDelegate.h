@@ -12,7 +12,11 @@
 
 - (id)initWithWebView:(WebView *)webView;
 
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame*)frame;
+- (NSURLRequest *)webView:(WebView *)sender
+                 resource:(id)identifier
+          willSendRequest:(NSURLRequest *)request
+         redirectResponse:(NSURLResponse *)redirectResponse
+           fromDataSource:(WebDataSource *)dataSource;
 
 - (BOOL)windowShouldClose:(id)sender;
 

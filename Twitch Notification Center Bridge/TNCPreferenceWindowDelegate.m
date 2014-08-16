@@ -11,7 +11,7 @@
     //Open webView.
     [self.authWebViewWindow makeKeyAndOrderFront:nil];
     //Load twitch login URL.
-    NSURL *url = [NSURL URLWithString:@"https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=myquwg33khcxf7bh65j7kez3rr72v43&redirect_uri=http://localhost"];
+    NSURL *url = [NSURL URLWithString:@"https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=myquwg33khcxf7bh65j7kez3rr72v43&redirect_uri=http://localhost&scope=user_read+user_subscriptions"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [self.authWebView.mainFrame loadRequest:urlRequest];
 }

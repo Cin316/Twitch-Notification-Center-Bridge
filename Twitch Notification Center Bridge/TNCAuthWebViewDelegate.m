@@ -23,7 +23,9 @@
     
     NSString* currentURL = request.URL.absoluteString;
     if([currentURL hasPrefix:@"http://localhost/#access_token="]){
-        NSString *accessToken = [[currentURL componentsSeparatedByString:@"access_token="] lastObject];
+        NSLog(@"%@", currentURL);
+        NSString *params = [[currentURL componentsSeparatedByString:@"access_token="] lastObject];
+        NSString *accessToken = [[params componentsSeparatedByString:@"&"] objectAtIndex:0];
         NSLog(@"%@", accessToken);
         //TODO Store access token and display success message.
     }

@@ -28,6 +28,8 @@
         NSString *accessToken = [[params componentsSeparatedByString:@"&"] objectAtIndex:0];
         NSLog(@"%@", accessToken);
         //TODO Store access token and display success message.
+        self.twitch = [[TNCTwitchAPIRequester alloc] initWithKey:accessToken];
+        //Maybe store access token in keychain?
     }
     //Continue loading webpage unmodified.
     return request;

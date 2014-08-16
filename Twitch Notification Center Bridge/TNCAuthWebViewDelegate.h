@@ -5,10 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
+#import "TNCTwitchAPIRequester.h"
 
 @interface TNCAuthWebViewDelegate : NSObject <NSWindowDelegate>
 
 @property (weak) WebView *authWebView;
+@property TNCTwitchAPIRequester *twitch;
 
 - (id)initWithWebView:(WebView *)webView;
 

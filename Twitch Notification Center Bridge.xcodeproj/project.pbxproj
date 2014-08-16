@@ -15,6 +15,7 @@
 		E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E162EC97197080610098EA57 /* TNCAppDelegate.m */; };
 		E162EC9B197080610098EA57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162EC99197080610098EA57 /* MainMenu.xib */; };
 		E162EC9D197080610098EA57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E162EC9C197080610098EA57 /* Images.xcassets */; };
+		E1B5B164199EE966000DF6F0 /* TNCTwitchAPIRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5B163199EE966000DF6F0 /* TNCTwitchAPIRequester.m */; };
 		E1EFAA471975D79900E78A53 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1EFAA461975D79900E78A53 /* WebKit.framework */; };
 		E1EFAA4A1977248100E78A53 /* TNCAuthWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EFAA491977248100E78A53 /* TNCAuthWebViewDelegate.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,8 @@
 		E162EC97197080610098EA57 /* TNCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNCAppDelegate.m; sourceTree = "<group>"; };
 		E162EC9A197080610098EA57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E162EC9C197080610098EA57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1B5B162199EE966000DF6F0 /* TNCTwitchAPIRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCTwitchAPIRequester.h; sourceTree = "<group>"; };
+		E1B5B163199EE966000DF6F0 /* TNCTwitchAPIRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCTwitchAPIRequester.m; sourceTree = "<group>"; };
 		E1EFAA461975D79900E78A53 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		E1EFAA481977248100E78A53 /* TNCAuthWebViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCAuthWebViewDelegate.h; sourceTree = "<group>"; };
 		E1EFAA491977248100E78A53 /* TNCAuthWebViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCAuthWebViewDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				E12488F1197483580041B236 /* TNCPreferenceWindowDelegate.m */,
 				E1EFAA481977248100E78A53 /* TNCAuthWebViewDelegate.h */,
 				E1EFAA491977248100E78A53 /* TNCAuthWebViewDelegate.m */,
+				E1B5B162199EE966000DF6F0 /* TNCTwitchAPIRequester.h */,
+				E1B5B163199EE966000DF6F0 /* TNCTwitchAPIRequester.m */,
 				E162EC99197080610098EA57 /* MainMenu.xib */,
 				E162EC9C197080610098EA57 /* Images.xcassets */,
 				E162EC8B197080610098EA57 /* Supporting Files */,
@@ -189,6 +194,7 @@
 				E162EC98197080610098EA57 /* TNCAppDelegate.m in Sources */,
 				E12488F2197483580041B236 /* TNCPreferenceWindowDelegate.m in Sources */,
 				E1EFAA4A1977248100E78A53 /* TNCAuthWebViewDelegate.m in Sources */,
+				E1B5B164199EE966000DF6F0 /* TNCTwitchAPIRequester.m in Sources */,
 				E162EC91197080610098EA57 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -157,6 +157,11 @@
                                         <action selector="logButtonPress:" target="1fW-LI-W2f" id="ra1-0a-w4H"/>
                                     </connections>
                                 </button>
+                                <imageView appearanceType="lightContent" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-Ws-Bid">
+                                    <rect key="frame" x="15" y="11" width="81" height="81"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="1aB-AE-Diu"/>
+                                </imageView>
                             </subviews>
                         </view>
                         <constraints>

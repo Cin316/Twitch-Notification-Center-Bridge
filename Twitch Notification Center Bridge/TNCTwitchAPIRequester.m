@@ -13,24 +13,43 @@
 - (id)initWithKey:(NSString *)key{
     self = [super init];
     if (self) {
+        //Set variables to parameter input.
         self.authKey = key;
+        
+        //Initialize variables.
+        self.userData = [NSMutableData dataWithCapacity:10];
+        self.username = [NSString string];
+        
+        //Set up session.
+        self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+        
+        //Request username.
+        NSURL *usernameURL = [NSURL URLWithString: [NSString stringWithFormat:@"https://api.twitch.tv/kraken/user?oauth_token=%@", self.authKey]];
+        NSURLSessionDataTask *usernameURLRequest = [self.session dataTaskWithURL:usernameURL];
+        [usernameURLRequest resume];//Starts task.
+        
     }
     return self;
 }
 
-- (NSString*)username{
-    NSString *token = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/user?oauth_token=%@", self.authKey];
-    NSURL *url = [NSURL URLWithString:token];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    //runRequest urlRequest.
-    //Process output for username.
-    return nil;
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data{
+    //If this is a user request...
+    if ([[[[dataTask originalRequest] URL] absoluteString] hasPrefix:@"https://api.twitch.tv/kraken/user?"]) {
+        [self.userData appendData:data];
+    }
+    
 }
 
-+ (NSString*)runRequest:(NSURLRequest *)request{
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:nil];
-    //Figure out how to get data from URL.
-    //- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
+    //If this is a user request...
+    if ([[[[task originalRequest] URL] absoluteString] hasPrefix:@"https://api.twitch.tv/kraken/user?"]) {
+        //Convert userData to NSString and store in username.
+        self.username = [[NSString alloc] initWithData:self.userData encoding:NSUTF8StringEncoding];
+        
+        //Clears userData.
+        self.userData = [NSData data];
+        //TODO parse JSON for username.
+    }
 }
 
 @end

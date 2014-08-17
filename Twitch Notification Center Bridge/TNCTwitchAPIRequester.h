@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TNCTwitchAPIRequester : NSObject
+@interface TNCTwitchAPIRequester : NSObject <NSURLSessionDataDelegate>
 
-@property NSString* authKey;
+@property NSString *authKey;
+@property NSMutableData *userData;
+@property NSString *username;
+@property NSURLSession *session;
 
 - (id)initWithKey:(NSString *)key;
 
-- (NSString*)username;
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error;
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data;
 
 @end

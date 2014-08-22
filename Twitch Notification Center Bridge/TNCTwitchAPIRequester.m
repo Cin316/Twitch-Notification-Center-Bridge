@@ -17,8 +17,9 @@
         self.authKey = key;
         
         //Initialize variables.
-        self.userData = [NSMutableData dataWithCapacity:10];
+        self.userDataPending = [NSMutableData dataWithCapacity:10];
         self.username = [NSString string];
+        self.userDataLoaded = NO;
         
         //Set up session.
         self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
@@ -35,7 +36,7 @@
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data{
     //If this is a user request...
     if ([[[[dataTask originalRequest] URL] absoluteString] hasPrefix:@"https://api.twitch.tv/kraken/user?"]) {
-        [self.userData appendData:data];
+        [self.userDataPending appendData:data];
     }
     
 }
@@ -43,12 +44,20 @@
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
     //If this is a user request...
     if ([[[[task originalRequest] URL] absoluteString] hasPrefix:@"https://api.twitch.tv/kraken/user?"]) {
-        //Convert userData to NSString and store in username.
-        self.username = [[NSString alloc] initWithData:self.userData encoding:NSUTF8StringEncoding];
         
-        //Clears userData.
-        self.userData = [NSData data];
-        //TODO parse JSON for username.
+        //Convert userDataPending to NSString and store in userData.
+        self.userData = self.userDataPending;
+        
+        //Clears userDataPending.
+        self.userDataPending = [NSData data];
+        
+        //Parse JSON for username.
+        NSDictionary *jsonUserData = [NSJSONSerialization JSONObjectWithData:self.userData options:0 error:nil];
+        NSLog(@"%@", jsonUserData);
+        self.username = [jsonUserData objectForKey:@"display_name"];
+        
+        //Register userData as loaded.
+        self.userDataLoaded = YES;
     }
 }
 

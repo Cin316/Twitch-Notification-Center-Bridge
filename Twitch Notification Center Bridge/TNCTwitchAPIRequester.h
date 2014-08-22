@@ -11,9 +11,13 @@
 @interface TNCTwitchAPIRequester : NSObject <NSURLSessionDataDelegate>
 
 @property NSString *authKey;
-@property NSMutableData *userData;
-@property NSString *username;
 @property NSURLSession *session;
+
+@property NSMutableData *userDataPending;
+@property BOOL userDataLoaded;
+
+@property NSData *userData;
+@property NSString *username;
 
 - (id)initWithKey:(NSString *)key;
 

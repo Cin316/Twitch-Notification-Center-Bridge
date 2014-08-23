@@ -16,4 +16,7 @@
 - (BOOL)windowShouldClose:(id)sender;
 - (void)windowWillClose:(NSNotification *)notification;
 
+- (void)setUsername:(NSString *)username;
+- (void)setLoggedIn:(BOOL)loggedIn;
+
 @end

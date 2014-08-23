@@ -25,4 +25,11 @@
     
 }
 
+- (void)setUsername:(NSString *)username{
+    
+}
+- (void)setLoggedIn:(BOOL)loggedIn{
+    
+}
+
 @end

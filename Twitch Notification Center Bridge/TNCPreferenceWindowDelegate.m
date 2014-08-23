@@ -26,10 +26,17 @@
 }
 
 - (void)setUsername:(NSString *)username{
-    
+    self.usernametextField.stringValue = username;
 }
 - (void)setLoggedIn:(BOOL)loggedIn{
-    
+    if (loggedIn==YES) {
+        self.loginButton.title = @"Log out";
+        [self.reauthButton setEnabled:YES];
+    }else if (loggedIn==NO){
+        self.loginButton.title = @"Log in";
+        [self.reauthButton setEnabled:NO];
+        self.usernametextField.stringValue = @"Not logged in";
+    }
 }
 
 @end

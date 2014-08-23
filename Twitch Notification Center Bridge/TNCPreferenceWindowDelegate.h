@@ -11,6 +11,10 @@
 @property (weak) IBOutlet NSWindow *authWebViewWindow;
 @property (weak) IBOutlet WebView *authWebView;
 
+@property (weak) IBOutlet NSTextField *usernametextField;
+@property (weak) IBOutlet NSButton *reauthButton;
+@property (weak) IBOutlet NSButton *loginButton;
+
 - (IBAction)logButtonPress:(id)sender;
 
 - (BOOL)windowShouldClose:(id)sender;

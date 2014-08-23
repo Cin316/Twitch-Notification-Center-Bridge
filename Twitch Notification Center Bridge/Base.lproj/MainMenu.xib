@@ -25,6 +25,9 @@
             <connections>
                 <outlet property="authWebView" destination="syT-6b-Q8J" id="9U3-Im-yAP"/>
                 <outlet property="authWebViewWindow" destination="Z3U-gX-f7e" id="ISg-Lo-Epg"/>
+                <outlet property="loginButton" destination="EEM-Gw-3Hc" id="ifQ-LH-hL3"/>
+                <outlet property="reauthButton" destination="N7Z-hS-hJi" id="VcQ-kK-xYh"/>
+                <outlet property="usernametextField" destination="g02-xD-GhD" id="47g-Q2-Vwv"/>
             </connections>
         </customObject>
         <menu title="Status Menu" id="tPx-LO-vnZ">
@@ -94,7 +97,7 @@
                                     </buttonCell>
                                 </button>
                                 <box autoresizesSubviews="NO" focusRingType="none" appearanceType="lightContent" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="eDG-1Y-Yv9">
-                                    <rect key="frame" x="14" y="36" width="416" height="4"/>
+                                    <rect key="frame" x="14" y="36" width="416" height="5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                     <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

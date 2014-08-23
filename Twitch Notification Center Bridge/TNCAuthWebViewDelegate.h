@@ -22,4 +22,6 @@
 
 - (BOOL)windowShouldClose:(id)sender;
 
+- (void)updateUserData;
+
 @end

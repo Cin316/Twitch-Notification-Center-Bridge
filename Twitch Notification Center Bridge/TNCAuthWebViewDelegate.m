@@ -29,7 +29,10 @@
         NSLog(@"%@", accessToken);
         //TODO Store access token and display success message.
         self.twitch = [[TNCTwitchAPIRequester alloc] initWithKey:accessToken];
-        //Maybe store access token in keychain?
+        //Maybe store access token in keychain.
+        //Update GUI in 1 second.
+        //TODO Fix warning below.
+        [self performSelector:@selector(updateUserData) withObject:nil afterDelay:1.0];
     }
     //Continue loading webpage unmodified.
     return request;
@@ -39,5 +42,17 @@
     //Yes, window should close.
     return YES;
 }
+
+- (void)updateUserData{
+    
+    if (self.twitch.userDataLoaded){
+        //Add username to GUI
+        
+    }else{
+        //Call self again in 1 second.
+        [self performSelector:@selector(updateUserData) withObject:nil afterDelay:1.0];
+    }
+    
+};
 
 @end

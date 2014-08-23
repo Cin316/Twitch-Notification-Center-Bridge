@@ -4,12 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TNCAuthWebViewDelegate.h"
+#import <WebKit/WebKit.h>
 
 @interface TNCPreferenceWindowDelegate : NSObject <NSWindowDelegate>
 
 @property (weak) IBOutlet NSWindow *authWebViewWindow;
-@property (weak) TNCAuthWebViewDelegate *authWebViewDelegate;
 @property (weak) IBOutlet WebView *authWebView;
 
 - (IBAction)logButtonPress:(id)sender;

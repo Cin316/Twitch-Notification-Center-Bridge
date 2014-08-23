@@ -9,7 +9,7 @@
 @interface TNCPreferenceWindowDelegate : NSObject <NSWindowDelegate>
 
 @property (weak) IBOutlet NSWindow *authWebViewWindow;
-@property (weak) IBOutlet TNCAuthWebViewDelegate *authWebViewDelegate;
+@property (weak) TNCAuthWebViewDelegate *authWebViewDelegate;
 @property (weak) IBOutlet WebView *authWebView;
 
 - (IBAction)logButtonPress:(id)sender;

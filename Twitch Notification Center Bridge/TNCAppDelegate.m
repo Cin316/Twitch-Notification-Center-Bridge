@@ -22,12 +22,11 @@
     self.statusItem.menu = self.statusMenu;
     
     //Register TNCPrefernceWindowDelegate as delegate of preference window.
-    self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
     [self.preferenceWindow setDelegate:self.prefDelegate];
     
     //Register TNCAuthWebViewWindowDelegate as delegate of web view window.
-    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] initWithWebView:[self authWebView] prefWindowDelegate:self.prefDelegate];
     [self.authWebViewWindow setDelegate:self.authWebViewDelegate];
+    [self.authWebViewDelegate setup];
     
     //Make the app display all notifications.
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];

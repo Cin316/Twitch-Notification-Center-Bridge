@@ -16,7 +16,9 @@
         <customObject id="Voe-Tx-rLC" customClass="TNCAppDelegate">
             <connections>
                 <outlet property="authWebView" destination="syT-6b-Q8J" id="Hcm-kQ-0Wy"/>
+                <outlet property="authWebViewDelegate" destination="9u8-OK-Jbc" id="AYX-55-0Bd"/>
                 <outlet property="authWebViewWindow" destination="Z3U-gX-f7e" id="mH1-O2-u0U"/>
+                <outlet property="prefDelegate" destination="1fW-LI-W2f" id="acT-ZX-rTY"/>
                 <outlet property="preferenceWindow" destination="SIt-uB-kqY" id="ODZ-RO-Goi"/>
                 <outlet property="statusMenu" destination="tPx-LO-vnZ" id="UgZ-JT-uXP"/>
             </connections>
@@ -27,7 +29,13 @@
                 <outlet property="authWebViewWindow" destination="Z3U-gX-f7e" id="ISg-Lo-Epg"/>
                 <outlet property="loginButton" destination="EEM-Gw-3Hc" id="ifQ-LH-hL3"/>
                 <outlet property="reauthButton" destination="N7Z-hS-hJi" id="VcQ-kK-xYh"/>
-                <outlet property="usernametextField" destination="g02-xD-GhD" id="47g-Q2-Vwv"/>
+                <outlet property="usernameTextField" destination="g02-xD-GhD" id="QZf-A4-7TL"/>
+            </connections>
+        </customObject>
+        <customObject id="9u8-OK-Jbc" customClass="TNCAuthWebViewDelegate">
+            <connections>
+                <outlet property="authWebView" destination="syT-6b-Q8J" id="asm-tB-eNz"/>
+                <outlet property="preferenceWindowDelegate" destination="1fW-LI-W2f" id="KQI-Ke-lXY"/>
             </connections>
         </customObject>
         <menu title="Status Menu" id="tPx-LO-vnZ">

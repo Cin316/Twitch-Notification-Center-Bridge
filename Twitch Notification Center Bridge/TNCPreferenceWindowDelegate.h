@@ -8,12 +8,12 @@
 
 @interface TNCPreferenceWindowDelegate : NSObject <NSWindowDelegate>
 
-@property (weak) IBOutlet NSWindow *authWebViewWindow;
-@property (weak) IBOutlet WebView *authWebView;
+@property (strong) IBOutlet NSWindow *authWebViewWindow;
+@property (strong) IBOutlet WebView *authWebView;
 
-@property (weak) IBOutlet NSTextField *usernameTextField;
-@property (weak) IBOutlet NSButton *reauthButton;
-@property (weak) IBOutlet NSButton *loginButton;
+@property (strong) IBOutlet NSTextField *usernameTextField;
+@property (strong) IBOutlet NSButton *reauthButton;
+@property (strong) IBOutlet NSButton *loginButton;
 
 - (IBAction)logButtonPress:(id)sender;
 

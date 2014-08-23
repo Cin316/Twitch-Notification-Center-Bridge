@@ -7,15 +7,10 @@
 
 @implementation TNCAuthWebViewDelegate
 
-- (id)initWithWebView:(WebView *)webView prefWindowDelegate:(TNCPreferenceWindowDelegate *)prefWindowDele{
-    self = [super init];
-    if (self) {
-        self.authWebView = webView;
-        [self.authWebView setResourceLoadDelegate:self];
-        self.preferenceWindowDelegate = prefWindowDele;
-    }
-    return self;
+- (void)setup{
+    [self.authWebView setResourceLoadDelegate:self];
 }
+
 - (NSURLRequest *)webView:(WebView *)sender
                  resource:(id)identifier
           willSendRequest:(NSURLRequest *)request
@@ -32,7 +27,6 @@
         self.twitch = [[TNCTwitchAPIRequester alloc] initWithKey:accessToken];
         //Maybe store access token in keychain.
         //Update GUI in 1 second.
-        //TODO Fix warning below.
         [self performSelector:@selector(updateUserData) withObject:nil afterDelay:1.0];
     }
     //Continue loading webpage unmodified.

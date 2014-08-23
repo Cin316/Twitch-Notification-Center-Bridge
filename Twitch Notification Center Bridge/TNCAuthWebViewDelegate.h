@@ -10,11 +10,11 @@
 
 @interface TNCAuthWebViewDelegate : NSObject <NSWindowDelegate>
 
-@property (weak) WebView *authWebView;
+@property (weak) IBOutlet WebView *authWebView;
 @property TNCTwitchAPIRequester *twitch;
-@property TNCPreferenceWindowDelegate *preferenceWindowDelegate;
+@property (weak) IBOutlet TNCPreferenceWindowDelegate *preferenceWindowDelegate;
 
-- (id)initWithWebView:(WebView *)webView prefWindowDelegate:(TNCPreferenceWindowDelegate *)prefWindowDele;
+- (void)setup;
 
 - (NSURLRequest *)webView:(WebView *)sender
                  resource:(id)identifier

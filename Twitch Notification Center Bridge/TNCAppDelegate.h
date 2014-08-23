@@ -9,8 +9,8 @@
 
 @interface TNCAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate>
 
-@property TNCPreferenceWindowDelegate* prefDelegate;
-@property TNCAuthWebViewDelegate* authWebViewDelegate;
+@property (weak) IBOutlet TNCPreferenceWindowDelegate *prefDelegate;
+@property (weak) IBOutlet TNCAuthWebViewDelegate *authWebViewDelegate;
 
 @property (assign) IBOutlet NSWindow *preferenceWindow;
 @property (weak) IBOutlet NSMenu *statusMenu;

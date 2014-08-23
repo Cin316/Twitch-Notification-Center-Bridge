@@ -22,7 +22,7 @@
         self.userDataLoaded = NO;
         
         //Set up session.
-        self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+        self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration] delegate:self delegateQueue:nil];
         
         //Request username.
         NSURL *usernameURL = [NSURL URLWithString: [NSString stringWithFormat:@"https://api.twitch.tv/kraken/user?oauth_token=%@", self.authKey]];

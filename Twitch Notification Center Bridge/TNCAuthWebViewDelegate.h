@@ -6,13 +6,15 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 #import "TNCTwitchAPIRequester.h"
+#import "TNCPreferenceWindowDelegate.h"
 
 @interface TNCAuthWebViewDelegate : NSObject <NSWindowDelegate>
 
 @property (weak) WebView *authWebView;
 @property TNCTwitchAPIRequester *twitch;
+@property TNCPreferenceWindowDelegate *preferenceWindowDelegate;
 
-- (id)initWithWebView:(WebView *)webView;
+- (id)initWithWebView:(WebView *)webView prefWindowDelegate:(TNCPreferenceWindowDelegate *)prefWindowDele;
 
 - (NSURLRequest *)webView:(WebView *)sender
                  resource:(id)identifier

@@ -21,13 +21,13 @@
     self.statusItem.highlightMode = YES;
     self.statusItem.menu = self.statusMenu;
     
-    //Register TNCAuthWebViewWindowDelegate as delegate of web view window.
-    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] initWithWebView:[self authWebView]];
-    [self.authWebViewWindow setDelegate:self.authWebViewDelegate];
-    
     //Register TNCPrefernceWindowDelegate as delegate of preference window.
     self.prefDelegate = [[TNCPreferenceWindowDelegate alloc] init];
     [self.preferenceWindow setDelegate:self.prefDelegate];
+    
+    //Register TNCAuthWebViewWindowDelegate as delegate of web view window.
+    self.authWebViewDelegate = [[TNCAuthWebViewDelegate alloc] initWithWebView:[self authWebView] prefWindowDelegate:self.prefDelegate];
+    [self.authWebViewWindow setDelegate:self.authWebViewDelegate];
     
     //Make the app display all notifications.
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];

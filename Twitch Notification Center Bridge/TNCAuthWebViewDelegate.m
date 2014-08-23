@@ -7,11 +7,12 @@
 
 @implementation TNCAuthWebViewDelegate
 
-- (id)initWithWebView:(WebView *)webView{
+- (id)initWithWebView:(WebView *)webView prefWindowDelegate:(TNCPreferenceWindowDelegate *)prefWindowDele{
     self = [super init];
     if (self) {
         self.authWebView = webView;
         [self.authWebView setResourceLoadDelegate:self];
+        self.preferenceWindowDelegate = prefWindowDele;
     }
     return self;
 }

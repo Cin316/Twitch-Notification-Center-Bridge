@@ -42,7 +42,8 @@
     
     if (self.twitch.userDataLoaded){
         //Add username to GUI
-        
+        [self.preferenceWindowDelegate setLoggedIn:YES];
+        [self.preferenceWindowDelegate setUsername:self.twitch.username];
     }else{
         //Call self again in 1 second.
         [self performSelector:@selector(updateUserData) withObject:nil afterDelay:1.0];

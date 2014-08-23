@@ -11,7 +11,7 @@
 @property (weak) IBOutlet NSWindow *authWebViewWindow;
 @property (weak) IBOutlet WebView *authWebView;
 
-@property (weak) IBOutlet NSTextField *usernametextField;
+@property (weak) IBOutlet NSTextField *usernameTextField;
 @property (weak) IBOutlet NSButton *reauthButton;
 @property (weak) IBOutlet NSButton *loginButton;
 
